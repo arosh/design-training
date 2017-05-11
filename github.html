@@ -11,6 +11,26 @@
         .container {
             width: 970px !important;
         }
+
+        .avatar {
+            border-radius: 3px;
+        }
+
+        .nav-tabs {
+            margin-bottom: 15px;
+        }
+
+        .navbar-form .form-control {
+            background-color: rgba(255, 255, 255, 0.125);
+            border: none;
+            box-shadow: none;
+            color: white;
+        }
+
+        .site-footer {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
     </style>
 </head>
 
@@ -28,14 +48,25 @@
             </form>
 
             <ul class="nav navbar-nav">
-                <li><a href="#">Pull Requests</a></li>
-                <li><a href="#">Issues</a></li>
-                <li><a href="#">Gist</a></li>
+                <li><a href="#"><b>Pull Requests</b></a></li>
+                <li><a href="#"><b>Issues</b></a></li>
+                <li><a href="#"><b>Gist</b></a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Icon <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <!--なぜかheight="20"にするとnavbarの高さが51になる-->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="avatar" src="icon.png" height="18" width="18"> <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -47,6 +78,55 @@
             </ul>
         </div>
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="icon.png" class="img-responsive">
+                <h1>Sho Iizuka</h1>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>NAIST</li>
+                    <li>Japan</li>
+                    <li><a href="https://arosh.github.io/">https://arosh.github.io/</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-9">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                    <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                    <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                    <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">Home</div>
+                    <div class="tab-pane" id="profile">Profile</div>
+                    <div class="tab-pane" id="messages">Messages</div>
+                    <div class="tab-pane" id="settings">Settings</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- pul-right -->
+        <div class="site-footer clearfix">
+            <ul class="list-inline pull-left">
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Security</li>
+                <li>Status</li>
+                <li>Help</li>
+            </ul>
+            <ul class="list-inline pull-right">
+                <li>Contact</li>
+                <li>API</li>
+                <li>Training</li>
+                <li>Shop</li>
+                <li>Blog</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
