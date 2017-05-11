@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!-- https://kids.yahoo.co.jp/games/sports/013.html -->
 <html lang="ja">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GitHub風</title>
+    <title>Yahoo!きっず風</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <style>
@@ -16,20 +17,65 @@
 
 <body>
     <div class="container clearfix">
-        <h2 style="display: inline-block">すごい</h2>
+        <h2 style="display: inline-block">タイトル</h2>
         <ul class="list-inline pull-right" style="padding-top: 33px">
-            <li><a href="https://kids.yahoo.co.jp/"><span class="glyphicon glyphicon-home"></span> Yahoo!きっず</a></li>
+            <li><a href="https://kids.yahoo.co.jp/"><span class="glyphicon glyphicon-home"></span> ホーム</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> ヘルプ</a></li>
         </ul>
     </div>
-    <div class="container">
-        <hr>
-        <div>
-        <div class="center-block">
-            <span>Y!</span>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="#">パズル・ボード</a></li>
+                <li><a href="#">アクション</a></li>
+                <li><a href="#">バラエティー</a></li>
+                <li><a href="#">デザイン・アート</a></li>
+                <li><a href="#">スポーツ</a></li>
+                <li><a href="#">クイズ</a></li>
+            </ul>
         </div>
+    </nav>
+    <div class="container">
+        くまのプーさんのホームランダービー！
+        <div class="row">
+            <div class="col-xs-9">
+                <img src="icon.png" class="img-responsive center-block">
+            </div>
+            <div class="col-xs-3">
+                <p>その他のスポーツゲーム</p>
+                <div class="clearfix">
+                    <img src="icon.png" width="100" height="75" style="float: left">
+                    <p>フリースロー</p>
+                </div>
+                <div class="clearfix">
+                    <img src="icon.png" width="100" height="75" style="float: left">
+                    <p>フリースロー</p>
+                </div>
+                <div class="clearfix">
+                    <img src="icon.png" width="100" height="75" style="float: left">
+                    <p>フリースロー</p>
+                </div>
+                <div class="clearfix">
+                    <img src="icon.png" width="100" height="75" style="float: left">
+                    <p>フリースロー</p>
+                </div>
+                <hr>
+                <p class="text-right"><span class="glyphicon glyphicon-triangle-right"></span> すべて見る</p>
+            </div>
+        </div>
+        <hr>
+        <!-- 中央寄せされないのはなぜ… -->
+        <div class="center-block">
+            <span style="font-size: 32px; margin-right: 8px;">Y!</span>
+            <div style="display: inline-block">
+                <a href="#">ヘルプ・お問い合わせ</a>
+                <span style="display: block">Copyright (C)</span>
+            </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
